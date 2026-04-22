@@ -4,8 +4,10 @@ from rubka.context import Message
 import asyncio
 from pytube import YouTube
 import os, re
+from dotenv import load_dotenv
 
-token = os.getenv(BOT_TOKEN)
+load_dotenv()
+token = os.getenv("BOT_TOKEN")
 bot = Robot(token)
 
 # Base variables
