@@ -12,4 +12,6 @@ jobs:
       - name: install dependencies
         run: pip install -r requirements.txt
       - name: Run script
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: python main.py
