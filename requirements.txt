@@ -1,3 +1,4 @@
 rubka
 pytube
 python-dotenv
+pillow
