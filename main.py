@@ -8,7 +8,7 @@ from downloader import download_video
 # Base variables
 DOWNLOAD_LOCATION = "./temp/"
 is_yt_sent = False
-token = os.getenv(BOT_TOKEN)
+token = os.getenv("BOT_TOKEN")
 bot = Robot(token)
 
 # Send welcome message to new users
