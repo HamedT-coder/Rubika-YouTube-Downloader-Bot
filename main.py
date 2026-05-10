@@ -35,7 +35,7 @@ async def download(bot:Robot, message:Message):
                 output_type="video",
                 quality="720"
             )
-            with open(file_path, 'rb') as video_file:
+            with open(video, 'rb') as video_file:
                 await bot.send_file(
                 user_id,           
                 video=video_file,                                        caption="فایل آپلود شد!"
