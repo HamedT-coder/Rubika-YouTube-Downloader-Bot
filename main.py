@@ -50,7 +50,7 @@ async def download(bot:Robot, message:Message):
             # ارسال وضعیت در حال پردازش
             status_msg = await message.answer("در حال دانلود ویدیو... لطفاً صبر کنید ⏳")
         
-            asyncio.create_task(process_download(bot, message,link))
+            asyncio.create_task(process_download(bot, message,link, status_msg))
         
     elif result is None:
         await message.reply("لینک نامعتبر!")
