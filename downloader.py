@@ -73,7 +73,7 @@ def download_video(video_url: str, output_type: str = "video", quality: str = "7
     
     # 2. Polling برای بررسی وضعیت تبدیل
     print("[2] در انتظار تبدیل ویدیو...")
-    max_attempts = 60  # حدود 2 دقیقه (هر 2 ثانیه)
+    max_attempts = 18  # حدود 2 دقیقه (هر 2 ثانیه)
     for attempt in range(max_attempts):
         time.sleep(2)
         try:
